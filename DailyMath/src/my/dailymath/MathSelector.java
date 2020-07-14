@@ -5,6 +5,7 @@
  */
 package my.dailymath;
 
+import javax.swing.JDialog;
 import javax.swing.JOptionPane;
 
 
@@ -222,8 +223,7 @@ public class MathSelector extends javax.swing.JFrame {
             }
             if (radioText2.equals("Multiplication")){
                 op1.hardMultiplication();
-            }
-            
+            }        
         }
     }//GEN-LAST:event_jButton4ActionPerformed
 
