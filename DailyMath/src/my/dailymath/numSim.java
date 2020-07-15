@@ -175,6 +175,7 @@ class Operation extends Mathematics {
         while (counter < 20) {
             int x = (int) Math.round(Math.random() * 100);
             int y = (int) Math.round(Math.random() * 100);
+            num1 = "";
             while (num1.equals("")){
                 num1 = JOptionPane.showInputDialog(x + "*" + y + "=");
                 if (num1 == null)
