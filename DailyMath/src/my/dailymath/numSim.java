@@ -20,11 +20,15 @@ class Operation extends Mathematics {
                 num1 = JOptionPane.showInputDialog(x + "+" + y + "=");
                 if (num1 == null)
                     System.exit(0);
-                if (num1.equals(""))
+                if (num1.matches("(-?[0-9]+)")) {
+                    number1 = Integer.parseInt(num1);
+                }
+                else { 
                     JOptionPane.showMessageDialog(null, "Please enter a valid number.", "Error", JOptionPane.ERROR_MESSAGE);
+                    num1 = "";
+                }
+                
             }
-            number1 = Integer.parseInt(num1);
-
             if (number1 == x + y) {
                 score++;
                 JOptionPane.showMessageDialog(null, "Correct. Your score is: " + score, "Results", JOptionPane.PLAIN_MESSAGE);
@@ -47,10 +51,15 @@ class Operation extends Mathematics {
                 num1 = JOptionPane.showInputDialog(x + "+" + y + "=");
                 if (num1 == null)
                     System.exit(0);
-                if (num1.equals(""))
+                if (num1.matches("(-?[0-9]+)")) {
+                    number1 = Integer.parseInt(num1);
+                }
+                else { 
                     JOptionPane.showMessageDialog(null, "Please enter a valid number.", "Error", JOptionPane.ERROR_MESSAGE);
+                    num1 = "";
+                }
             }
-            number1 = Integer.parseInt(num1);
+
 
             if (number1 == x + y) {
                 score++;
@@ -74,11 +83,15 @@ class Operation extends Mathematics {
                 num1 = JOptionPane.showInputDialog(x + "-" + y + "=");
                 if (num1 == null)
                     System.exit(0);
-                if (num1.equals(""))
+                if (num1.matches("(-?[0-9]+)")) {
+                    number1 = Integer.parseInt(num1);
+                }
+                else { 
                     JOptionPane.showMessageDialog(null, "Please enter a valid number.", "Error", JOptionPane.ERROR_MESSAGE);
+                    num1 = "";
+                }
             }
             
-            number1 = Integer.parseInt(num1);
 
             if (number1 == x - y) {
                 score++;
@@ -102,11 +115,15 @@ class Operation extends Mathematics {
                 num1 = JOptionPane.showInputDialog(x + "-" + y + "=");
                 if (num1 == null)
                     System.exit(0);
-                if (num1.equals(""))
+                if (num1.matches("(-?[0-9]+)")) {
+                    number1 = Integer.parseInt(num1);
+                }
+                else { 
                     JOptionPane.showMessageDialog(null, "Please enter a valid number.", "Error", JOptionPane.ERROR_MESSAGE);
+                    num1 = "";
+                }
             }
             
-            number1 = Integer.parseInt(num1);
 
             if (number1 == x - y) {
                 score++;
@@ -131,11 +148,15 @@ class Operation extends Mathematics {
                 num1 = JOptionPane.showInputDialog(x + "*" + y + "=");
                 if (num1 == null)
                     System.exit(0);
-                if (num1.equals(""))
+                if (num1.matches("(-?[0-9]+)")) {
+                    number1 = Integer.parseInt(num1);
+                }
+                else { 
                     JOptionPane.showMessageDialog(null, "Please enter a valid number.", "Error", JOptionPane.ERROR_MESSAGE);
+                    num1 = "";
+                }
             }
             
-            number1 = Integer.parseInt(num1);
 
             if (number1 == x * y) {
                 score++;
@@ -154,15 +175,18 @@ class Operation extends Mathematics {
         while (counter < 20) {
             int x = (int) Math.round(Math.random() * 100);
             int y = (int) Math.round(Math.random() * 100);
-            num1 = JOptionPane.showInputDialog(x + "*" + y + "=");
             while (num1.equals("")){
                 num1 = JOptionPane.showInputDialog(x + "*" + y + "=");
                 if (num1 == null)
                     System.exit(0);
-                if (num1.equals(""))
+                if (num1.matches("(-?[0-9]+)")) {
+                    number1 = Integer.parseInt(num1);
+                }
+                else { 
                     JOptionPane.showMessageDialog(null, "Please enter a valid number.", "Error", JOptionPane.ERROR_MESSAGE);
+                    num1 = "";
+                }
             }
-            number1 = Integer.parseInt(num1);
 
             if (number1 == x * y) {
                 score++;
