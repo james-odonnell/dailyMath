@@ -77,7 +77,7 @@ public class MathSelector extends javax.swing.JFrame {
         jRadioButton5.setText("Multiplication");
 
         label1.setAlignment(java.awt.Label.CENTER);
-        label1.setText("Daily Math v1.0");
+        label1.setText("Daily Math v1.1");
 
         label2.setAlignment(java.awt.Label.CENTER);
         label2.setText("Select Operation");

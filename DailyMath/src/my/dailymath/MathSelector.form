@@ -200,7 +200,7 @@
         <Component class="java.awt.Label" name="label1">
           <Properties>
             <Property name="alignment" type="int" value="1"/>
-            <Property name="text" type="java.lang.String" value="Daily Math v1.0"/>
+            <Property name="text" type="java.lang.String" value="Daily Math v1.1"/>
           </Properties>
         </Component>
         <Component class="java.awt.Label" name="label2">

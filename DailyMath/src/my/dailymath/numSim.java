@@ -15,9 +15,14 @@ class Operation extends Mathematics {
         while (counter < 10) {
             int x = (int) Math.round(Math.random() * 10);
             int y = (int) Math.round(Math.random() * 10);
-            num1 = JOptionPane.showInputDialog(x + "+" + y + "=");
-            if (num1 == null)
-                System.exit(0);
+            num1 = "";
+            while (num1.equals("")){
+                num1 = JOptionPane.showInputDialog(x + "+" + y + "=");
+                if (num1 == null)
+                    System.exit(0);
+                if (num1.equals(""))
+                    JOptionPane.showMessageDialog(null, "Please enter a valid number.", "Error", JOptionPane.ERROR_MESSAGE);
+            }
             number1 = Integer.parseInt(num1);
 
             if (number1 == x + y) {
@@ -31,15 +36,20 @@ class Operation extends Mathematics {
             }
 
         }
-        System.exit(0); 
+        //System.exit(0); 
     }
     public void hardAddition() {
-        while (counter < 10) {
+        while (counter < 20) {
             int x = (int) Math.round(Math.random() * 100);
             int y = (int) Math.round(Math.random() * 100);
-            num1 = JOptionPane.showInputDialog(x + "+" + y + "=");
-            if (num1 == null)
-                System.exit(0);
+            num1 = "";
+            while (num1.equals("")){
+                num1 = JOptionPane.showInputDialog(x + "+" + y + "=");
+                if (num1 == null)
+                    System.exit(0);
+                if (num1.equals(""))
+                    JOptionPane.showMessageDialog(null, "Please enter a valid number.", "Error", JOptionPane.ERROR_MESSAGE);
+            }
             number1 = Integer.parseInt(num1);
 
             if (number1 == x + y) {
@@ -53,15 +63,21 @@ class Operation extends Mathematics {
             }
 
         }
-        System.exit(0); 
+        //System.exit(0); 
     }
     public void subtraction() {
-        while (counter < 10) {
+        while (counter < 20) {
             int x = (int) Math.round(Math.random() * 10);
             int y = (int) Math.round(Math.random() * 10);
-            num1 = JOptionPane.showInputDialog(x + "-" + y + "=");
-            if (num1 == null)
-                System.exit(0);
+            num1 = "";
+            while (num1.equals("")){
+                num1 = JOptionPane.showInputDialog(x + "-" + y + "=");
+                if (num1 == null)
+                    System.exit(0);
+                if (num1.equals(""))
+                    JOptionPane.showMessageDialog(null, "Please enter a valid number.", "Error", JOptionPane.ERROR_MESSAGE);
+            }
+            
             number1 = Integer.parseInt(num1);
 
             if (number1 == x - y) {
@@ -75,15 +91,21 @@ class Operation extends Mathematics {
             }
 
         }
-        System.exit(0); 
+        //System.exit(0); 
     }
     public void hardSubtraction() {
-        while (counter < 10) {
+        while (counter < 20) {
             int x = (int) Math.round(Math.random() * 100);
             int y = (int) Math.round(Math.random() * 100);
-            num1 = JOptionPane.showInputDialog(x + "-" + y + "=");
-            if (num1 == null)
-                System.exit(0);
+            num1 = "";
+            while (num1.equals("")){
+                num1 = JOptionPane.showInputDialog(x + "-" + y + "=");
+                if (num1 == null)
+                    System.exit(0);
+                if (num1.equals(""))
+                    JOptionPane.showMessageDialog(null, "Please enter a valid number.", "Error", JOptionPane.ERROR_MESSAGE);
+            }
+            
             number1 = Integer.parseInt(num1);
 
             if (number1 == x - y) {
@@ -97,16 +119,22 @@ class Operation extends Mathematics {
             }
 
         }
-        System.exit(0); 
+        //System.exit(0); 
     }
         
     public void multiplication() {
-        while (counter < 10) {
+        while (counter < 20) {
             int x = (int) Math.round(Math.random() * 10);
             int y = (int) Math.round(Math.random() * 10);
-            num1 = JOptionPane.showInputDialog(x + "*" + y + "=");
-            if (num1 == null)
-                System.exit(0);
+            num1 = "";
+            while (num1.equals("")){
+                num1 = JOptionPane.showInputDialog(x + "*" + y + "=");
+                if (num1 == null)
+                    System.exit(0);
+                if (num1.equals(""))
+                    JOptionPane.showMessageDialog(null, "Please enter a valid number.", "Error", JOptionPane.ERROR_MESSAGE);
+            }
+            
             number1 = Integer.parseInt(num1);
 
             if (number1 == x * y) {
@@ -120,15 +148,20 @@ class Operation extends Mathematics {
             }
 
         }
-        System.exit(0); 
+        //System.exit(0); 
     }
     public void hardMultiplication() {
-        while (counter < 10) {
+        while (counter < 20) {
             int x = (int) Math.round(Math.random() * 100);
             int y = (int) Math.round(Math.random() * 100);
             num1 = JOptionPane.showInputDialog(x + "*" + y + "=");
-            if (num1 == null)
-                System.exit(0);
+            while (num1.equals("")){
+                num1 = JOptionPane.showInputDialog(x + "*" + y + "=");
+                if (num1 == null)
+                    System.exit(0);
+                if (num1.equals(""))
+                    JOptionPane.showMessageDialog(null, "Please enter a valid number.", "Error", JOptionPane.ERROR_MESSAGE);
+            }
             number1 = Integer.parseInt(num1);
 
             if (number1 == x * y) {
@@ -142,7 +175,7 @@ class Operation extends Mathematics {
             }
 
         }
-        System.exit(0); 
+        //System.exit(0); 
     }
 }
 
