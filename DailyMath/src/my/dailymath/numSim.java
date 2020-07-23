@@ -20,6 +20,10 @@ class Operation extends Mathematics {
                 num1 = JOptionPane.showInputDialog(x + "+" + y + "=");
                 if (num1 == null)
                     System.exit(0);
+                if (num1.length() > 9){
+                    JOptionPane.showMessageDialog(null, "This number is way too big..", "Error", JOptionPane.ERROR_MESSAGE);
+                    num1 = "";
+                }
                 if (num1.matches("(-?[0-9]+)")) {
                     number1 = Integer.parseInt(num1);
                 }
@@ -51,6 +55,10 @@ class Operation extends Mathematics {
                 num1 = JOptionPane.showInputDialog(x + "+" + y + "=");
                 if (num1 == null)
                     System.exit(0);
+                if (num1.length() > 9) {
+                    JOptionPane.showMessageDialog(null, "This number is way too big..", "Error", JOptionPane.ERROR_MESSAGE);
+                    num1 = "";
+                }
                 if (num1.matches("(-?[0-9]+)")) {
                     number1 = Integer.parseInt(num1);
                 }
@@ -83,6 +91,10 @@ class Operation extends Mathematics {
                 num1 = JOptionPane.showInputDialog(x + "-" + y + "=");
                 if (num1 == null)
                     System.exit(0);
+                if (num1.length() > 9) {
+                    JOptionPane.showMessageDialog(null, "This number is way too big..", "Error", JOptionPane.ERROR_MESSAGE);
+                    num1 = "";
+                }
                 if (num1.matches("(-?[0-9]+)")) {
                     number1 = Integer.parseInt(num1);
                 }
@@ -115,6 +127,10 @@ class Operation extends Mathematics {
                 num1 = JOptionPane.showInputDialog(x + "-" + y + "=");
                 if (num1 == null)
                     System.exit(0);
+                if (num1.length() > 9) {
+                    JOptionPane.showMessageDialog(null, "This number is way too big..", "Error", JOptionPane.ERROR_MESSAGE);
+                    num1 = "";
+                }
                 if (num1.matches("(-?[0-9]+)")) {
                     number1 = Integer.parseInt(num1);
                 }
@@ -148,6 +164,10 @@ class Operation extends Mathematics {
                 num1 = JOptionPane.showInputDialog(x + "*" + y + "=");
                 if (num1 == null)
                     System.exit(0);
+                if (num1.length() > 9) {
+                    JOptionPane.showMessageDialog(null, "This number is way too big..", "Error", JOptionPane.ERROR_MESSAGE);
+                    num1 = "";
+                }
                 if (num1.matches("(-?[0-9]+)")) {
                     number1 = Integer.parseInt(num1);
                 }
@@ -180,6 +200,10 @@ class Operation extends Mathematics {
                 num1 = JOptionPane.showInputDialog(x + "*" + y + "=");
                 if (num1 == null)
                     System.exit(0);
+                if (num1.length() > 9) {
+                    JOptionPane.showMessageDialog(null, "This number is way too big..", "Error", JOptionPane.ERROR_MESSAGE);
+                    num1 = "";
+                }
                 if (num1.matches("(-?[0-9]+)")) {
                     number1 = Integer.parseInt(num1);
                 }
