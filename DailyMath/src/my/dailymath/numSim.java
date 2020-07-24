@@ -1,5 +1,5 @@
 package my.dailymath;
-
+import java.sql.*;
 import javax.swing.JOptionPane;
 
 class Mathematics{
@@ -11,7 +11,7 @@ class Mathematics{
 
 class Operation extends Mathematics {
 
-    public void addition() {
+    public void addition(String playerName) {
         while (counter < 10) {
             int x = (int) Math.round(Math.random() * 10);
             int y = (int) Math.round(Math.random() * 10);
@@ -44,9 +44,11 @@ class Operation extends Mathematics {
             }
 
         }
+        topScores top = new topScores();
+        top.addScore(playerName, score, "Easy");
         //System.exit(0); 
     }
-    public void hardAddition() {
+    public void hardAddition(String playerName) {
         while (counter < 20) {
             int x = (int) Math.round(Math.random() * 100);
             int y = (int) Math.round(Math.random() * 100);
@@ -80,7 +82,9 @@ class Operation extends Mathematics {
             }
 
         }
-        //System.exit(0); 
+        //System.exit(0);
+        topScores top = new topScores();
+        top.addScore(playerName, score, "Medium");
     }
     public void subtraction() {
         while (counter < 20) {
@@ -231,11 +235,11 @@ class Operation extends Mathematics {
 
 public class numSim {
     public static void main(String args[]){
-        Operation test1 = new Operation();
+        //Operation test1 = new Operation();
         //test1.addition();
         //test1.subtraction();
         //test1.multiplication();
-        test1.hardAddition();
+        //test1.hardAddition();
 
 
     }
